@@ -1,0 +1,8 @@
+{
+  "engine": "cocos2d-html5",
+  "packages": "packages",
+  "version": "2.4.11",
+  "name": "cocolib-client",
+  "id": "e813e9d1-d35c-4a49-827c-fe8cbaabfbc8",
+  "isNew": false
+}
