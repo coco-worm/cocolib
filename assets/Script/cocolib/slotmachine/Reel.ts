@@ -5,23 +5,32 @@
 // Learn life-cycle callbacks:
 //  - https://docs.cocos.com/creator/2.4/manual/en/scripting/life-cycle-callbacks.html
 
+import { gamify } from "../../cocowater/core/Decorator";
 const {ccclass, property} = cc._decorator;
+const {activity} = gamify;
 
 @ccclass
-export default class SingleActivity extends cc.Component {
+export default class Reel extends cc.Component {
 
-    async execute(){
+    @property(cc.Label)
+    label: cc.Label = null;
 
-        
-    }
+    @property
+    text: string = 'hello';
 
+    private a:string = 'a_var'
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {}
 
-    // start () {
+    start () {
 
-    // }
+    }
+
+    @activity
+    async intent(){
+        return 1;
+    }
 
     // update (dt) {}
 }

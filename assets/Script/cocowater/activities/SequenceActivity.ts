@@ -6,23 +6,11 @@
 //  - https://docs.cocos.com/creator/2.4/manual/en/scripting/life-cycle-callbacks.html
 
 import Activity from "../core/Activity";
-import ActivityReference from "../core/ActivityReference";
 
 const {ccclass, property} = cc._decorator;
 
 @ccclass
-export default class ParallelActivities extends Activity implements IActivity {
-        
-    @property({
-        override:true,
-        visible:false
-    })
-    activity:ActivityReference = null
-
-
-    async intent(){
-
-        
-    }
-    // update (dt) {}
+export default class SequenceActivity extends Activity implements IActivity {
+    
+    
 }
